@@ -2,6 +2,6 @@
 
 <ul>
   <li *ngFor="let product of products">
-    {{product.id + ' - ' + product.name}}
+    <a routerLink="/product/{{product.id}}">{{product.id}}</a>
   </li>
 </ul>
